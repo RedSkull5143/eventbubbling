@@ -1,22 +1,25 @@
-*{
-    margin: 0;padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #EC6EAD;
+    /* background-color: #EC6EAD; */
+    background: linear-gradient(#0f2027, #203a43, #2c5364);
 }
 
-.container{
+.container {
     background-color: #fff;
     height: 80%;
     width: 80%;
@@ -24,7 +27,7 @@ body{
     overflow: hidden;
 }
 
-.topdiv{
+.topdiv {
     background-color: #3494E6;
     height: 80px;
     width: 100%;
@@ -33,20 +36,22 @@ body{
     justify-content: space-between;
     padding: 0 30%;
     gap: 20px;
-    
+
 }
 
-.topdiv .aaa{
+.topdiv .aaa {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-h4{
+
+h4 {
     font-size: 20px;
     color: #fff;
     font-weight: bolder;
 }
-.box{
+
+.box {
     background-color: #fff;
     height: 30px;
     width: 40px;
@@ -58,7 +63,7 @@ h4{
     font-weight: 700;
 }
 
-.bottondiv{
+.bottondiv {
     height: calc(100%-80px);
     padding: 20px;
     display: flex;
@@ -66,11 +71,11 @@ h4{
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    
+
 }
 
-.bottondiv .circle{
-    background-color: #EC6EAD;
+.bottondiv .circle {
+    background-color: #2c5364;
     padding: 5px;
     color: white;
     font-weight: 500;
@@ -84,8 +89,37 @@ h4{
     cursor: pointer;
 }
 
-.circle:hover{
+.circle:hover {
     background-color: #3494E6;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
 
+    .container {
+        width: 90%;
+        height: 96%;
+    }
+
+    .topdiv {
+        width: 100%;
+        padding: 10px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .bottondiv {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .bottondiv .circle {
+        width: 30px;
+        height: 30px;
+        
+    }
+}
